@@ -1,0 +1,79 @@
+{
+  "name": "feathers-fastest-validator",
+  "description": "The validator hooks integrate with fastest-validator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/JPooban/featherjs-fastest-validator",
+  "main": "lib/",
+  "keywords": [
+    "feathers",
+    "feathers-plugin",
+    "feathers-hooks",
+    "hooks",
+    "fastest-validator",
+    "feathers-fastest-validator"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JPooban/featherjs-fastest-validator.git"
+  },
+  "author": {
+    "name": "Feathers contributors",
+    "email": "hello@feathersjs.com",
+    "url": "https://feathersjs.com"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/JPooban/featherjs-fastest-validator/issues"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "release:pre": "npm version prerelease && npm publish --tag pre",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "lint": "eslint --no-ignore lib/*.js lib/**/*.js --fix",
+    "ava": "NODE_ENV=test ava --verbose",
+    "coverage": "nyc ava && nyc report --reporter=text-lcov | coveralls",
+    "test": "npm run lint && npm run coverage",
+    "commit": "git-cz"
+  },
+  "semistandard": {
+    "env": [
+      "ava"
+    ]
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@feathersjs/errors": "^4.4.3",
+    "fastest-validator": "^0.6.19"
+  },
+  "devDependencies": {
+    "@feathersjs/feathers": "^4.4.3",
+    "ava": "^2.4.0",
+    "commitizen": "^4.0.3",
+    "coveralls": "^3.0.9",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-ava": "^9.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "nyc": "^14.1.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
