@@ -58,8 +58,9 @@ export.before = {
 <a name="properties"></a>
 ## Properties
 The parameter name suppose from `validator(schema, data)`.
-| Parameter | Default |        Type        | Description |
-|:----------|:-------:|--------------------|-------------|
+
+| Parameter | Default |        Type        |                        Description                       |
+|:----------|:-------:|--------------------|----------------------------------------------------------|
 | schema    | -       | `ValidationSchema` | Please visit https://github.com/icebob/fastest-validator |
 | data      | `data`  | `string`           | the reference of data which need to validate such as `context.data` or `context.params.query`. For more info about feathers hook context plese visit https://docs.feathersjs.com/api/hooks.html. |
 
