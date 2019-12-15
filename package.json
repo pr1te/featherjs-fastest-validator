@@ -18,16 +18,16 @@
     "url": "git://github.com/JPooban/featherjs-fastest-validator.git"
   },
   "author": {
-    "name": "Feathers contributors",
-    "email": "hello@feathersjs.com",
-    "url": "https://feathersjs.com"
+    "name": "Jugkapong Pooban",
+    "email": "j.pooban@gmail.com",
+    "url": "https://medium.com/@jpooban"
   },
   "contributors": [],
   "bugs": {
     "url": "https://github.com/JPooban/featherjs-fastest-validator/issues"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 10.0.0"
   },
   "scripts": {
     "publish": "git push origin --tags && npm run changelog && git push origin",
