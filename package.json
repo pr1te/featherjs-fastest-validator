@@ -1,7 +1,7 @@
 {
   "name": "feathers-fastest-validator",
   "description": "The validator hooks integrate with fastest-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/JPooban/featherjs-fastest-validator",
   "main": "lib/",
   "keywords": [
