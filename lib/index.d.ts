@@ -1,16 +1,22 @@
 import { Hook } from '@feathersjs/feathers';
-import { ValidationSchema } from 'fastest-validator';
+import FastestValidator, {
+  ValidationRule,
+  ValidationSchema,
+  CompilationFunction,
+  ValidatorConstructorOptions,
+} from 'fastest-validator';
 
 declare module 'feathers-fastest-validator' {
-
-  export default function validator(schema: ValidationSchema, data?: Data): Hook;
-
   interface Schema extends ValidationSchema {}
 
-  type Data = string;
+  type ValidateField = String;
+
+  export default class Validator extends FastestValidator {
+    validateHook (schema: Schema, field?: ValidateField): Hook;
+  }
 
   export {
     Schema,
-    Data,
+    ValidateField,
   };
 }

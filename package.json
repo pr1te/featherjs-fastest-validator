@@ -1,7 +1,7 @@
 {
   "name": "feathers-fastest-validator",
   "description": "The validator hooks integrate with fastest-validator",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "homepage": "https://github.com/JPooban/featherjs-fastest-validator",
   "main": "lib/",
   "keywords": [
@@ -20,7 +20,7 @@
   "author": {
     "name": "Jugkapong Pooban",
     "email": "j.pooban@gmail.com",
-    "url": "https://medium.com/@jpooban"
+    "url": "https://medium.com/@pr1te"
   },
   "contributors": [],
   "bugs": {
@@ -51,21 +51,24 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@feathersjs/errors": "^4.4.3",
-    "fastest-validator": "^0.6.19"
+    "@feathersjs/errors": "^4.5.12",
+    "fastest-validator": "^1.12.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@feathersjs/feathers": "^4.4.3",
-    "ava": "^2.4.0",
-    "commitizen": "^4.0.3",
-    "coveralls": "^3.0.9",
-    "cz-conventional-changelog": "^3.0.2",
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-ava": "^9.0.0",
-    "eslint-plugin-import": "^2.19.1",
-    "husky": "^3.1.0",
-    "nyc": "^14.1.1"
+    "@feathersjs/feathers": "^4.5.12",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "ava": "^4.2.0",
+    "commitizen": "^4.2.4",
+    "coveralls": "^3.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-ava": "^13.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "nyc": "^15.1.0"
   },
   "ava": {
     "files": [
